@@ -138,7 +138,7 @@ function scatterplot_update_vis(rawdata) {
           .attr("visibility", "hidden");
       });
 
-      prevImgElements.attr("src", function(d){ return d; })
+      prevImgElements.attr("src", function(d){ return d; });
 
     var dots = svg.selectAll(".dot")
             .data(data['data'], function(d, i) { return index[i]; });
